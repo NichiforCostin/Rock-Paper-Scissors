@@ -19,7 +19,17 @@ function playRound(playerPick, computerPick) {
     return 1;
   } else {
     winnerParagraph.textContent = "The winner of the round is: Computer";
-    return -1;
+    return 0;
+  }
+}
+
+function getPlayerResult(playerScore, computerScore) {
+  if (playerScore > computerScore) {
+    return "The winner of the game is: Player";
+  } else if (playerScore < computerScore) {
+    return "The winner of the game is: Computer";
+  } else {
+    return "The winner of the game is: No one. It's a tie!";
   }
 }
 
@@ -29,6 +39,13 @@ const scissorsButton = document.getElementById("scissorsButton");
 const playerChoice = document.getElementById("playerChoice");
 const computerChoice = document.getElementById("computerChoice");
 const winnerParagraph = document.getElementById("winnerOfTheRound");
+const roundCounter = document.getElementById("roundCounter");
+const finalResult = document.getElementById("winnerOfTheGame");
+
+let playerScore = 0;
+let computerScore = 0;
+let round = 0;
+
 
 let playerPick = ""; 
 
@@ -37,7 +54,20 @@ rockButton.addEventListener('click', function() {
   computerPick = getComputerChoice();
   playerChoice.textContent = `The player choice is: ${playerPick}`;
   computerChoice.textContent = `The computer choice is: ${computerPick}`;
-  playRound(playerPick, computerPick);
+  const result = playRound(playerPick, computerPick);
+
+  if(result === 1) {
+    playerScore++;
+  } else if (result === -1) {
+    computerScore++;
+  }
+
+  round++;
+  roundCounter.textContent = `Round ${round} of 5`;
+
+  if (round === 5) {
+    finalResult.textContent = getPlayerResult(playerScore, computerScore);
+  }
 
 });
 
@@ -46,7 +76,21 @@ paperButton.addEventListener('click', function() {
   computerPick = getComputerChoice();
   playerChoice.textContent = `The player choice is: ${playerPick}`;
   computerChoice.textContent = `The computer choice is: ${computerPick}`;
-  playRound(playerPick, computerPick);
+  const result = playRound(playerPick, computerPick);
+
+  if(result === 1) {
+    playerScore++;
+  } else if (result === -1) {
+    computerScore++;
+  }
+
+  round++;
+  roundCounter.textContent = `Round ${round} of 5`;
+
+  if (round === 5) {
+    finalResult.textContent = getPlayerResult(playerScore, computerScore);
+  }
+
   
 });
 
@@ -55,7 +99,21 @@ scissorsButton.addEventListener('click', function() {
   computerPick = getComputerChoice();
   playerChoice.textContent = `The player choice is: ${playerPick}`;
   computerChoice.textContent = `The computer choice is: ${computerPick}`;
-  playRound(playerPick, computerPick);
+  const result = playRound(playerPick, computerPick);
+
+  if(result === 1) {
+    playerScore++;
+  } else if (result === -1) {
+    computerScore++;
+  }
+
+  round++;
+  roundCounter.textContent = `Round ${round} of 5`;
+
+  if (round === 5) {
+    finalResult.textContent = getPlayerResult(playerScore, computerScore);
+  }
+
 
 });
 
