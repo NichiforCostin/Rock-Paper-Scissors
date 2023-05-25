@@ -19,7 +19,7 @@ function playRound(playerPick, computerPick) {
     return 1;
   } else {
     winnerParagraph.textContent = "The winner of the round is: Computer";
-    return 0;
+    return -1;
   }
 }
 
@@ -41,6 +41,8 @@ const computerChoice = document.getElementById("computerChoice");
 const winnerParagraph = document.getElementById("winnerOfTheRound");
 const roundCounter = document.getElementById("roundCounter");
 const finalResult = document.getElementById("winnerOfTheGame");
+const playerScoreDisplay = document.getElementById("playerScore");
+const computerScoreDisplay = document.getElementById("computerScore");
 
 let playerScore = 0;
 let computerScore = 0;
@@ -64,6 +66,8 @@ rockButton.addEventListener('click', function() {
 
   round++;
   roundCounter.textContent = `Round ${round} of 5`;
+  playerScoreDisplay.textContent = `Player Score: ${playerScore}`;
+  computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
 
   if (round === 5) {
     finalResult.textContent = getPlayerResult(playerScore, computerScore);
@@ -86,6 +90,8 @@ paperButton.addEventListener('click', function() {
 
   round++;
   roundCounter.textContent = `Round ${round} of 5`;
+  playerScoreDisplay.textContent = `Player Score: ${playerScore}`;
+  computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
 
   if (round === 5) {
     finalResult.textContent = getPlayerResult(playerScore, computerScore);
@@ -109,6 +115,8 @@ scissorsButton.addEventListener('click', function() {
 
   round++;
   roundCounter.textContent = `Round ${round} of 5`;
+  playerScoreDisplay.textContent = `Player Score: ${playerScore}`;
+  computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
 
   if (round === 5) {
     finalResult.textContent = getPlayerResult(playerScore, computerScore);
