@@ -33,6 +33,32 @@ function getPlayerResult(playerScore, computerScore) {
   }
 }
 
+function resetGame() {
+  playerScore = 0;
+  computerScore = 0;
+  round = 0;
+  playerPick = "";
+  playerChoice.textContent = "The player choice is: ";
+  computerChoice.textContent = "The computer choice is: ";
+  winnerParagraph.textContent = "";
+  roundCounter.textContent = "Round 0 of 5";
+  playerScoreDisplay.textContent = "Player Score: 0";
+  computerScoreDisplay.textContent = "Computer Score: 0";
+  finalResult.textContent = "";
+}
+
+function disableButtons() {
+  rockButton.disabled = true;
+  paperButton.disabled = true;
+  scissorsButton.disabled = true;
+}
+
+function enableButtons() {
+  rockButton.disabled = false;
+  paperButton.disabled = false;
+  scissorsButton.disabled = false;
+}
+
 const rockButton = document.getElementById("rockButton");
 const paperButton = document.getElementById("paperButton");
 const scissorsButton = document.getElementById("scissorsButton");
