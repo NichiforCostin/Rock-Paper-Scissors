@@ -97,6 +97,7 @@ rockButton.addEventListener('click', function() {
 
   if (round === 5) {
     finalResult.textContent = getPlayerResult(playerScore, computerScore);
+    disableButtons();
   }
 
 });
@@ -121,6 +122,7 @@ paperButton.addEventListener('click', function() {
 
   if (round === 5) {
     finalResult.textContent = getPlayerResult(playerScore, computerScore);
+    disableButtons();
   }
 
   
@@ -146,8 +148,17 @@ scissorsButton.addEventListener('click', function() {
 
   if (round === 5) {
     finalResult.textContent = getPlayerResult(playerScore, computerScore);
+    disableButtons();
   }
 
 
 });
+
+playAgainButton.addEventListener('click', function() {
+  resetGame();
+  enableButtons();
+});
+
+disableButtons();
+
 
