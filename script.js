@@ -15,8 +15,8 @@ let playerPick = "";
 rockButton.addEventListener('click', function() {
   playerPick = "rock";
   computerPick = getComputerChoice();
-  console.log(playerPick);
-  console.log(computerPick);
+  playerChoice.textContent = `The player choice is: ${playerPick}`;
+  computerChoice.textContent = `The computer choice is: ${computerPick}`;
 
 
 });
@@ -24,16 +24,16 @@ rockButton.addEventListener('click', function() {
 paperButton.addEventListener('click', function() {
   playerPick = "paper";
   computerPick = getComputerChoice();
-  console.log(playerPick);
-  console.log(computerPick);
+  playerChoice.textContent = `The player choice is: ${playerPick}`;
+  computerChoice.textContent = `The computer choice is: ${computerPick}`;
   
 });
 
 scissorsButton.addEventListener('click', function() {
   playerPick = "scissors";
   computerPick = getComputerChoice();
-  console.log(playerPick);
-  console.log(computerPick);
+  playerChoice.textContent = `The player choice is: ${playerPick}`;
+  computerChoice.textContent = `The computer choice is: ${computerPick}`;
 
 });
 
