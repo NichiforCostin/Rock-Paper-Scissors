@@ -7,6 +7,8 @@ function getComputerChoice() {
 const rockButton = document.getElementById("rockButton");
 const paperButton = document.getElementById("paperButton");
 const scissorsButton = document.getElementById("scissorsButton");
+const playerChoice = document.getElementById("playerChoice");
+const computerChoice = document.getElementById("computerChoice");
 
 let playerPick = ""; 
 
@@ -15,7 +17,8 @@ rockButton.addEventListener('click', function() {
   computerPick = getComputerChoice();
   console.log(playerPick);
   console.log(computerPick);
-  
+
+
 });
 
 paperButton.addEventListener('click', function() {
