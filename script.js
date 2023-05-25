@@ -1,7 +1,36 @@
-function computerPick() {
+function getComputerChoice() {
     const options = ['rock', 'paper', 'scissors'];
     const randomIndex = Math.floor(Math.random() * options.length);
     return options[randomIndex];
 }
 
-console.log(computerPick());
+const rockButton = document.getElementById("rockButton");
+const paperButton = document.getElementById("paperButton");
+const scissorsButton = document.getElementById("scissorsButton");
+
+let playerPick = ""; 
+
+rockButton.addEventListener('click', function() {
+  playerPick = "rock";
+  computerPick = getComputerChoice();
+  console.log(playerPick);
+  console.log(computerPick);
+  
+});
+
+paperButton.addEventListener('click', function() {
+  playerPick = "paper";
+  computerPick = getComputerChoice();
+  console.log(playerPick);
+  console.log(computerPick);
+  
+});
+
+scissorsButton.addEventListener('click', function() {
+  playerPick = "scissors";
+  computerPick = getComputerChoice();
+  console.log(playerPick);
+  console.log(computerPick);
+
+});
+
