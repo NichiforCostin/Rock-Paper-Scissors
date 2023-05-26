@@ -77,3 +77,14 @@ html, body {
     }
 
     /** END OF SELECT ROCK/PAPER/SCISSORS DIV **/
+
+    /** START OF PLAYER/COMPUTER CHOICE DIV **/
+    .choices {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+
+
+    /** END OF PLAYER/COMPUTER CHOICE DIV **/
