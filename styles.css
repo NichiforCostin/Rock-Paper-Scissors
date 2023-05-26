@@ -85,6 +85,16 @@ html, body {
       align-items: center;
     }
 
-
-
     /** END OF PLAYER/COMPUTER CHOICE DIV **/
+
+    /** START OF PLAYER/COMPUTER SCORE DIV **/
+    .scores {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+
+    /** END OF PLAYER/COMPUTER SCORE DIV **/
+
+
