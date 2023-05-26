@@ -94,7 +94,15 @@ html, body {
       align-items: center;
     }
 
+    /** START OF ROUND COUNTER, WINNER OF ROUND AND GAME **/
+    .winner-roundcounter-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-    /** END OF PLAYER/COMPUTER SCORE DIV **/
+    /** END OF ROUND COUNTER, WINNER OF ROUND AND GAME **/
+
 
 
