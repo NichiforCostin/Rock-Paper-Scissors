@@ -14,18 +14,31 @@
   </head>
   <body>
     <div class="game">
-      <button type="button" id="playAgainButton">PLAY</button>
-      <br />
-      <button type="button" id="rockButton">Rock</button>
-      <button type="button" id="paperButton">Paper</button>
-      <button type="button" id="scissorsButton">Scissors</button>
-      <p id="playerChoice">The player choice is:</p>
-      <p id="computerChoice">The computer choice is:</p>
-      <p id="playerScore">Player score:</p>
-      <p id="computerScore">Computer score:</p>
-      <p id="roundCounter">Round 0 of 5</p>
-      <p id="winnerOfTheRound">The winner of the round is:</p>
-      <p id="winnerOfTheGame">The winner of the game is:</p>
+      <div id="play-button-div">
+        <button type="button" id="playAgainButton" class="button-50">
+          Play
+        </button>
+      </div>
+      <div class="play-buttons-div">
+        <button type="button" id="rockButton" class="button-50">Rock</button>
+        <button type="button" id="paperButton" class="button-50">Paper</button>
+        <button type="button" id="scissorsButton" class="button-50">
+          Scissors
+        </button>
+      </div>
+      <div class="choices">
+        <p id="playerChoice">The player choice is:</p>
+        <p id="computerChoice">The computer choice is:</p>
+      </div>
+      <div class="scores">
+        <p id="playerScore">Player score:</p>
+        <p id="computerScore">Computer score:</p>
+      </div>
+      <div class="winner-roundcounter-div">
+        <p id="roundCounter">Round 0 of 5</p>
+        <p id="winnerOfTheRound">The winner of the round is:</p>
+        <p id="winnerOfTheGame">The winner of the game is:</p>
+      </div>
       <script src="script.js"></script>
     </div>
   </body>
