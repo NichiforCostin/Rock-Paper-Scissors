@@ -45,7 +45,7 @@ function resetGame() {
   playerScoreDisplay.textContent = "Player Score: 0";
   computerScoreDisplay.textContent = "Computer Score: 0";
   finalResult.textContent = "";
-  playButton.textContent = "PLAY";
+  playButton.textContent = "Play!";
 }
 
 function disableButtons() {
@@ -100,7 +100,7 @@ rockButton.addEventListener('click', function() {
   if (round === 5) {
     finalResult.textContent = getPlayerResult(playerScore, computerScore);
     disableButtons();
-    playButton.textContent = "PLAY AGAIN";
+    playButton.textContent = "Play again!";
   }
 
 });
@@ -126,7 +126,7 @@ paperButton.addEventListener('click', function() {
   if (round === 5) {
     finalResult.textContent = getPlayerResult(playerScore, computerScore);
     disableButtons();
-    playButton.textContent = "PLAY AGAIN";
+    playButton.textContent = "Play again!";
   }
 
   
@@ -153,7 +153,7 @@ scissorsButton.addEventListener('click', function() {
   if (round === 5) {
     finalResult.textContent = getPlayerResult(playerScore, computerScore);
     disableButtons();
-    playButton.textContent = "PLAY AGAIN";
+    playButton.textContent = "Play again!";
   }
 
 
