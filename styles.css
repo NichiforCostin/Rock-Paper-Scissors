@@ -55,9 +55,19 @@ html, body {
     outline: 0;
     }
 
+    .button-50:active {
+  background-color: gray;
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
     .button-50:not([disabled]):active {
     box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
+    }
+
+    .button-50:disabled {
+      background-color: gray;
     }
 
     @media (min-width: 768px) {
